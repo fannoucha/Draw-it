@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DRAW IT !</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>DRAW IT !</h1>
+    <p>Choisis une couleur et dessine !</p>
+    <div class="tools">
+        <div class="colors">
+            <button data-color="red"></button>
+            <button data-color="blue"></button>
+            <button data-color="green"></button>
+            <button data-color="yellow"></button>
+            <button data-color="black"></button>
+            <button data-color="white"></button>
+        </div>
+        <label>Épaisseur <input id="width" type="range" min="1" max="30" value="5"></label>
+    </div>
+    <canvas id="drawing"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>

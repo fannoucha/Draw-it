@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f2f2f2;
+    margin: 20px;
+}
+h1 { font-size: 36px; }
+.tools {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px;
+}
+.colors { display: flex; gap: 10px; }
+.colors button {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #888;
+    border-radius: 50%;
+    background: var(--color);
+    cursor: pointer;
+}
+
+.colors button:nth-child(1) { --color: red; }
+.colors button:nth-child(2) { --color: blue; }
+.colors button:nth-child(3) { --color: green; }
+.colors button:nth-child(4) { --color: yellow; }
+.colors button:nth-child(5) { --color: black; }
+.colors button:nth-child(6) { --color: white; }
+canvas {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    height: 65vh;
+    margin: auto;
+    background: white;
+    border: 1px solid #ccc;
+    touch-action: none;
+}
